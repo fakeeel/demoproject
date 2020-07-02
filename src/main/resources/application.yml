@@ -1,0 +1,16 @@
+# 开发环境配置
+server:
+  # 服务器的HTTP端口
+  port: 81
+
+spring:
+  datasource:
+    name: study  #数据库名
+    url: jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC #url
+    username: root  #用户名
+    password: root  #密码
+    driver-class-name: com.mysql.jdbc.Driver  #数据库链接驱动
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml #配置映射文件
+  type-aliases-package: cn.zhuyin.study.demoproject.bean #配置实体类
